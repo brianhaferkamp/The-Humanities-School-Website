@@ -2,9 +2,141 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>The Humanities School</title>
+    <!-- Compressed Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!--jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   </head>
   <body>
+
+    <!-- Masthead -->
+
+    <header class="header-bar text-center">
+      <a href="#about">What is the Humanities School?</a>
+    </header>
+
+
+    <!-- Navigation Bar -->
+
+    <nav role="navigation">
+      <ul class="menu expanded text-center responsive-text">
+        <li><a href="#">English</a></li>
+        <li><a href="#">Mathematics</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Philosophy</a></li>
+        <li><a href="#">Psychology</a></li>
+        <li><a href="#">Art</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+    </nav>
+
+
+    <header role="banner" id="hero">
+      <div class="logo">
+        <img src="assets/img/logo-banner-white.png" alt="The Humanities School logo">
+      </div>
+    </header>
+
+
+
+
+
+
+    <!-- About Section -->
+
+    <section id="about" class="about-section">
+        <div class="section-title">
+          <h2>About</h2>
+        </div>
+        <div class="section-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore itaque, aliquam veniam est. Exercitationem dignissimos excepturi doloribus distinctio! Dolorum qui molestias quasi dicta quos, ad necessitatibus quia recusandae a repellendus quam id voluptas molestiae, unde laborum quis at accusantium labore ab expedita delectus facere nemo dolorem minima. A modi, illum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore itaque, aliquam veniam est. Exercitationem dignissimos excepturi doloribus distinctio! Dolorum qui molestias quasi dicta quos, ad necessitatibus quia recusandae a repellendus quam id voluptas molestiae, unde laborum quis at accusantium labore ab expedita delectus facere nemo dolorem minima. A modi, illum.</p>
+        </div>
+    </section>
+
+    <!-- License Section -->
+    <section class="license-section">
+        <div class="section-title">
+          <h2>License & Use</h2>
+        </div>
+        <div class="section-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore itaque, aliquam veniam est. Exercitationem dignissimos excepturi doloribus distinctio! Dolorum qui molestias quasi dicta quos, ad necessitatibus quia recusandae a repellendus quam id voluptas molestiae, unde laborum quis at accusantium labore ab expedita delectus facere nemo dolorem minima. A modi, illum.</p>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+        <form action="">
+          <div class="row column">
+            <input type="text" placeholder="Name">
+          </div>
+          <div class="row column">
+            <input type="text" placeholder="Email Address">
+          </div>
+          <div class="row column">
+            <textarea placeholder="Type your question or comment" rows="10"></textarea>
+          </div>
+          <input type="submit" class="button expanded" value="Submit">
+          </div>
+        </form>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="row">
+        <div class="columns small-12 medium-2">
+          <img src="assets/img/logo-stacked-white.png" alt="The Humanities School logo">
+        </div>
+        <div class="columns small-12 medium-7">
+          <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit repellendus corporis neque, cupiditate veritatis voluptatibus eum alias aliquid fugiat accusantium, ea distinctio nam impedit recusandae. Quasi impedit neque necessitatibus itaque.</p>
+        </div>
+        <div class="columns small-12 medium-3 footer-links">
+          <ul class="no-bullet text-right">
+            <li><a href="#">What is The Humanities School?</a></li>
+            <li><a href="#">How can I use the courses?</a></li>
+            <li><a href="#">Who is behind this project?</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <script type="text/javascript">
+      $(function(){
+        $('a[href="#about"]').click(function(e) {
+          e.preventDefault();
+          var targetOffset = $('a[name="about"]').offset().top;
+          $('html, body').animate(
+            {scrollTop: targetOffset},
+            1000
+          );
+        });
+      });
+    </script>
+
+    <!-- Compressed Foundation JavaScript -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+
+
+
+    <!-- Responsive Text -->
+    <!--<script type="text/javascript" src="assets/js/jquery.responsivetext.js"></script>
+    <script>
+    $("body").responsiveText();
+  </script>-->
+
+
 
   </body>
 </html>

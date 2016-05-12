@@ -1,0 +1,188 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cardo', serif;
+}
+
+body {
+    font-size: 18px;
+    color: #2b1100;
+}
+
+a {
+  transition: color 300ms ease;
+    -webkit-transition: color 300ms ease;
+    -moz-transition: color 300ms ease;
+    -o-transition: color 300ms ease;
+}
+
+.header-bar {
+  margin: 0;
+  padding: .5em 2em;
+  background-color: #5b3a25;
+}
+
+.header-bar a {
+  font-size: .75em;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  /*transition: color 300ms ease;
+    -webkit-transition: color 500ms ease;
+    -moz-transition: color 500ms ease;
+    -o-transition: color 500ms ease;*/
+}
+
+.header-bar a:hover {
+  color: #ddd;
+}
+
+#hero {
+  position: relative;
+  min-width: 100%;
+  min-height: 580px;
+  padding: 2em;
+  background-image: url(../../assets/img/hero-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero .logo img {
+  position: absolute;
+  width: 75%;
+  top: 400px;
+}
+
+#hero .logo h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3.333em;
+}
+
+nav {
+  background-image: url("../../assets/img/dark_leather.png");
+  background-repeat: repeat-x;
+  background-color: rgb(80,45,22);
+  background-blend-mode: luminosity;
+}
+
+nav li {
+  color: #fff;
+  padding: .75em;
+  font-size: 1.4em;
+}
+
+nav li:hover {
+  background-color: #552200;
+  background-blend-mode: luminosity;
+}
+
+nav li a,
+nav li a:hover {
+  color: #fff;
+}
+
+section {
+  text-align: center;
+  padding: 3em 10em;
+}
+
+
+
+.about-section {
+  background-image: url("../../assets/img/aboutImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.section-title {
+  font-size: 2em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.section-text {
+  padding: 0 5em;
+}
+
+.contact-section {
+  background-image: url("../../assets/img/contact-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.contact-section form {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+form .column {
+  padding: 0;
+  margin: 0;
+}
+
+form [type=submit] {
+  text-transform: uppercase;
+  font-size: 1em;
+  background-color: #552200;
+}
+
+form [type=submit]:hover {
+  background-color: #5b3a25;
+}
+
+form [type=text],
+form textarea {
+  border: 1px solid #2b1100;
+}
+
+::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+   font-size: 1.2em;
+   font-style: italic;
+}
+:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+   font-size: 1.2em;
+   font-style: italic;
+}
+::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+  font-size: 1.2em;
+  font-style: italic;
+}
+:-ms-input-placeholder, textarea:-ms-input-placeholder {
+   font-size: 1.2em;
+   font-style: italic;
+}
+
+footer {
+  padding: 2em 0 1em;
+  background-image: url("../../assets/img/dark_leather.png");
+  background-repeat: repeat-x;
+  background-color: rgb(80,45,22);
+  background-blend-mode: luminosity;
+}
+
+.footer-text {
+  font-size: .9em;
+  color: #fff;
+  border-left: 1px solid #fff;
+  padding-left: 35px;
+}
+
+.footer-links a {
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.5;
+  font-size: .75em;
+}
+
+.footer-links a:hover {
+  color: #ddd;
+}
