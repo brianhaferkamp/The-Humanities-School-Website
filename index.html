@@ -7,31 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
-    <!--jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   </head>
   <body>
 
     <!-- Masthead -->
 
-    <header class="header-bar text-center">
-      <a href="#about">What is the Humanities School?</a>
+    <header class="header-bar">
+      <a href="about.html">What is the Humanities School?</a>
     </header>
-
-
-    <!-- Navigation Bar -->
-
-    <nav role="navigation">
-      <ul class="menu expanded text-center responsive-text">
-        <li><a href="#">English</a></li>
-        <li><a href="#">Mathematics</a></li>
-        <li><a href="#">Science</a></li>
-        <li><a href="#">Philosophy</a></li>
-        <li><a href="#">Psychology</a></li>
-        <li><a href="#">Art</a></li>
-        <li><a href="#">Technology</a></li>
-      </ul>
-    </nav>
 
 
     <header role="banner" id="hero">
@@ -40,7 +23,144 @@
       </div>
     </header>
 
+    <!-- Navigation Bar -->
 
+    <nav id="main-navigation" role="navigation">
+      <ul class="menu expanded text-center">
+        <li><a href="#main-navigation" onclick="toggle_element('#english-toggle', 500)">English</a></li>
+        <li><a href="#main-navigation" onclick="toggle_element('#mathematics-toggle', 500)">Mathematics</a></li>
+        <li><a href="#main-navigation">Science</a></li>
+        <li><a href="#main-navigation">Philosophy</a></li>
+        <li><a href="#main-navigation">Psychology</a></li>
+        <li><a href="#main-navigation">Art</a></li>
+        <li><a href="#main-navigation">Technology</a></li>
+      </ul>
+    </nav>
+
+    <!-- English Menu Toggle Information -->
+
+    <aside id="english-toggle">
+      <div class="row">
+        <div class="columns small-12 medium-3">
+          <nav>
+            <ul class="menu vertical">
+              <li class="course-nav"><a href="#main-navigation">Rhetoric 101</a></li>
+              <li class="course-nav"><a href="#main-navigation">Rhetoric 102</a></li>
+              <li class="course-nav"><a href="#main-navigation">Academic Writing</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="columns small-12 medium-9">
+          <!-- RHT 101 -->
+          <div class="course-unit">
+            <div class="course-title">
+              <h3>Rhetoric 101</h3>
+            </div>
+            <div class="course-creator">
+              <h5>Keturah Haferkamp</h5>
+              <h6>Professor of English, <em>Triton College</em></h6>
+            </div>
+            <div class="course-description">
+              <h4>Course Description</h4>
+              <div class="row">
+                <div class="columns small-12 medium-8">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus similique eveniet delectus dolores quis expedita nulla, maiores at aliquam natus sapiente quas placeat, laborum, in. Nisi sequi ratione nulla accusamus tempora odio, dolore, eius voluptates, cupiditate neque non maxime natus, facilis culpa tempore. Atque, ab molestiae. Reprehenderit, exercitationem illo reiciendis.</p>
+                </div>
+                <div class="columns small-12 medium-4 button-unit">
+                  <p><button class="button expanded">Download</button></p>
+                  <p><button class="button expanded">View Online</button></p>
+                  <p><button class="button expanded">Resources</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- RHT 102 -->
+          <!-- <div class="course-unit">
+            <div class="course-title">
+              <h3>Rhetoric 102</h3>
+            </div>
+            <div class="course-creator">
+              <h5>Keturah Haferkamp</h5>
+              <h6>Professor of English, <em>Triton College</em></h6>
+            </div>
+            <div class="course-description">
+              <h4>Course Description</h4>
+              <div class="row">
+                <div class="columns small-12 medium-8">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus similique eveniet delectus dolores quis expedita nulla, maiores at aliquam natus sapiente quas placeat, laborum, in. Nisi sequi ratione nulla accusamus tempora odio, dolore, eius voluptates, cupiditate neque non maxime natus, facilis culpa tempore. Atque, ab molestiae. Reprehenderit, exercitationem illo reiciendis.</p>
+                </div>
+                <div class="columns small-12 medium-4">
+                  <p><button class="button expanded">Download</button></p>
+                  <p><button class="button expanded">View Online</button></p>
+                  <p><button class="button expanded">Resources</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Academic Writing -->
+          <!-- <div class="course-unit">
+            <div class="course-title">
+              <h3>Academic Writing</h3>
+            </div>
+            <div class="course-creator">
+              <h5>Keturah Haferkamp</h5>
+              <h6>Professor of English, <em>Triton College</em></h6>
+            </div>
+            <div class="course-description">
+              <h4>Course Description</h4>
+              <div class="row">
+                <div class="columns small-12 medium-8">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus similique eveniet delectus dolores quis expedita nulla, maiores at aliquam natus sapiente quas placeat, laborum, in. Nisi sequi ratione nulla accusamus tempora odio, dolore, eius voluptates, cupiditate neque non maxime natus, facilis culpa tempore. Atque, ab molestiae. Reprehenderit, exercitationem illo reiciendis.</p>
+                </div>
+                <div class="columns small-12 medium-4">
+                  <p><button class="button expanded">Download</button></p>
+                  <p><button class="button expanded">View Online</button></p>
+                  <p><button class="button expanded">Resources</button></p>
+                </div>
+              </div>
+            </div>
+          </div> --> -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- Mathematics Menu Toggle Information -->
+
+    <aside id="mathematics-toggle">
+      <div class="row">
+        <div class="columns small-12 medium-3">
+          <nav>
+            <ul class="menu vertical">
+              <li><a href="#main-navigation">Math 101</a></li>
+              <li><a href="#main-navigation">Math 102</a></li>
+              <li><a href="#main-navigation">Geometry</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="columns small-12 medium-9">
+          <div class="course-title">
+            <h3>Math 101</h3>
+          </div>
+          <div class="course-creator">
+            <h5>Keturah Haferkamp</h5>
+            <h6>Professor of English, <em>Triton College</em></h6>
+          </div>
+          <div class="course-description">
+            <h4>Course Description</h4>
+            <div class="row">
+              <div class="columns small-12 medium-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus similique eveniet delectus dolores quis expedita nulla, maiores at aliquam natus sapiente quas placeat, laborum, in. Nisi sequi ratione nulla accusamus tempora odio, dolore, eius voluptates, cupiditate neque non maxime natus, facilis culpa tempore. Atque, ab molestiae. Reprehenderit, exercitationem illo reiciendis.</p>
+              </div>
+              <div class="columns small-12 medium-4">
+                <p><button class="button expanded">Download</button></p>
+                <p><button class="button expanded">View Online</button></p>
+                <p><button class="button expanded">Resources</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
 
 
 
@@ -109,32 +229,28 @@
     </footer>
 
 
+  <!--Load jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <!-- Load Compressed Foundation JavaScript -->
+  <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
 
 
+  <!-- js Calls -->
 
-    <script type="text/javascript">
-      $(function(){
-        $('a[href="#about"]').click(function(e) {
-          e.preventDefault();
-          var targetOffset = $('a[name="about"]').offset().top;
-          $('html, body').animate(
-            {scrollTop: targetOffset},
-            1000
-          );
-        });
-      });
-    </script>
+  <!-- Hide all asides on load -->
+  <script type ="text/javascript">
+  $(document).ready(function() {$('aside').hide();});
+  </script>
 
-    <!-- Compressed Foundation JavaScript -->
-    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
-
-
-
-    <!-- Responsive Text -->
-    <!--<script type="text/javascript" src="assets/js/jquery.responsivetext.js"></script>
-    <script>
+  <!-- Responsive Text -->
+  <script type="text/javascript" src="assets/js/jquery.responsivetext.js"></script>
+  <script>
     $("body").responsiveText();
-  </script>-->
+  </script>
+
+  <!-- Toggle -->
+  <script type ="text/javascript" src="assets/js/toggle.js"></script>
 
 
 

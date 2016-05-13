@@ -18,7 +18,42 @@ a {
     -webkit-transition: color 300ms ease;
     -moz-transition: color 300ms ease;
     -o-transition: color 300ms ease;
+  color: #552200;
 }
+
+a:hover {
+  color: #2b1100;
+}
+
+.active-menu-item {
+  font-weight: 700;
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: #552200;
+}
+
+.button:hover {
+  background-color: #5b3a25;
+}
+
+/* Mobile Styles
+
+@media screen and (max-width: 1100px) {
+  section {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section-text {
+    padding: 0;
+  }
+}
+
+End Mobile Styles */
+
 
 .header-bar {
   margin: 0;
@@ -63,32 +98,90 @@ a {
   font-size: 3.333em;
 }
 
-nav {
+nav#main-navigation {
   background-image: url("../../assets/img/dark_leather.png");
   background-repeat: repeat-x;
   background-color: rgb(80,45,22);
   background-blend-mode: luminosity;
 }
 
-nav li {
+nav#main-navigation li {
   color: #fff;
   padding: .75em;
   font-size: 1.4em;
 }
 
-nav li:hover {
+nav#main-navigation li:hover {
   background-color: #552200;
   background-blend-mode: luminosity;
 }
 
-nav li a,
-nav li a:hover {
+nav#main-navigation li a,
+nav#main-navigation li a:hover {
   color: #fff;
+}
+
+aside {
+  padding: 2em;
+}
+
+aside ul {
+  padding-right: 1em;
+}
+
+aside li:first-child {
+  border-top: 1px solid #eee;
+}
+
+aside li {
+  padding: 1em 0;
+  border-bottom: 1px solid #eee;
+}
+
+aside li:hover {
+  background-color: #f9f9f9;
+}
+
+aside .course-title {
+  float: left;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+aside .course-creator h5 {
+  font-size: .9em;
+  font-weight: 700;
+  line-height: .5;
+  padding-top: 10px;
+}
+
+aside .course-creator h6 {
+  font-size: .8em;
+}
+
+aside .course-description {
+  margin-top: 3em;
+}
+
+aside .course-description h4 {
+  font-size: .9em;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-spacing: 2px;
 }
 
 section {
   text-align: center;
-  padding: 3em 10em;
+  padding: 3em 5em;
+}
+
+.course-unit {
+  /*position: absolute;*/
+}
+
+.button-unit {
+    margin-bottom: 100px;
 }
 
 
@@ -109,6 +202,17 @@ section {
 
 .section-text {
   padding: 0 5em;
+}
+
+
+
+.faq-section {
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  font-weight: 700;
+  margin-bottom: 1em;
 }
 
 .contact-section {
@@ -186,3 +290,15 @@ footer {
 .footer-links a:hover {
   color: #ddd;
 }
+
+.accordion {
+  border: none;
+  background-color: #f9f9f9;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+    .accordion dt {
+        margin: 2em 0 .75em;
+        text-transform: uppercase;
+    }
